@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "zoneUpliftScale": 1.0,
+  "survivorGoldScale": 1.0,
+  "chestGoldScale": 1.0,
+  "abyssEnemyScale": 1.0,
+  "lategameXpScale": 1.0,
+  "adsEnabled": true,
+  "iapEnabled": true,
+  "minSupportedVersion": null,
+  "minVersionMessage": "",
+  "configUrl": "https://raw.githubusercontent.com/keckmatd/atlas-config/main/game-config.json"
+}
