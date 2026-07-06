@@ -20,6 +20,9 @@ The fetch is non-blocking with a 3s timeout. Precedence: **validated fetch > las
 | `chestGoldScale` | number | `1.0` | Multiplier on chest gold rolls (survivor gold shares this curve, #341). Clamped to `[0.25, 4]`. |
 | `abyssEnemyScale` | number | `1.0` | Flat multiplier on Abyss boss stat scaling (not the per-floor exponent). Clamped to `[0.25, 4]`. |
 | `lategameXpScale` | number | `1.0` | Multiplier on the global monster XP floor curve (#344). Clamped to `[0.25, 4]`. |
+| `playerXpScale` | number | `1.0` | Multiplier on all combat/boss XP granted to the player, applied at the XP emitters: monster kill XP, boss XP, Abyss boss XP. Event and bonus-level XP unaffected (#391). Clamped to `[0.25, 4]`. |
+| `monsterStatScale` | number | `1.0` | Multiplier on regular/elite monster HP/ATK/DEF/SPD. Explicit-stat bosses excluded — use `bossStatScale` (#391). Clamped to `[0.25, 4]`. |
+| `bossStatScale` | number | `1.0` | Multiplier on boss stats: elite bosses, archbosses, and Abyss bosses (stacks with `abyssEnemyScale` in the Abyss) (#391). Clamped to `[0.25, 4]`. |
 | `adsEnabled` | boolean | `true` | Kill switch — `false` disables interstitial ads app-wide. |
 | `iapEnabled` | boolean | `true` | Kill switch — `false` hides the remove-ads purchase UI and blocks new purchases. Restores keep working; owners never lose their entitlement. |
 | `minSupportedVersion` | string \| null | `null` | Semver. App versions below this see a non-dismissable update notice on the title screen. |
